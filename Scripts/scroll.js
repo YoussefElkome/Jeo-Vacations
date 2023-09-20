@@ -23,6 +23,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     moreButton.addEventListener('click', function () {
-        smoothScrollTo(featuresSection, 1000, -60); // 100px offset
+        smoothScrollTo(featuresSection, 1000, -30); // 100px offset
     });
 });
