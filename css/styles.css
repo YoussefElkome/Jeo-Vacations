@@ -63,7 +63,16 @@ body{
 .container .features{
     background-color: #f6f6f6;
     padding-bottom: 4rem;
+    opacity: 0;
+    transition: 1s;
 }
+.container .features .transform-element {
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s;
+    /* Other styles for .transform-element elements */
+}
+
 .container .features .headers, .container .vications .headers{
     display: flex;
     width: 100%;
