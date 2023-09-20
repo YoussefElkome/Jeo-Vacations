@@ -72,6 +72,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Contact Us
 
-Got questions, feedback, or just want to say hello? We'd love to hear from you! Reach out to us at [contact@jeovacations.com](mailto:contact@jeovacations.com) or visit our [contact page](https://www.jeovacations.com/contact).
+Got questions, feedback, or just want to say hello? We'd love to hear from you! Reach out to us at [contact@jeovacations.com](yha232008@gmail.com) or visit our [contact page](https://www.jeovacations.com/contact).
 
 Happy travels with Jeo Vacations!
