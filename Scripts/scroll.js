@@ -5,7 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const targetPosition = targetElement.getBoundingClientRect().top;
         const startPosition = window.pageYOffset;
         const startTime = performance.now();
-
         function animate(currentTime) {
             const elapsedTime = currentTime - startTime;
             const progress = Math.min(elapsedTime / duration, 1);

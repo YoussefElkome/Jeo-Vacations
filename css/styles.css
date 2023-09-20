@@ -66,12 +66,11 @@ body{
     opacity: 0;
     transition: 1s;
 }
-.container .features .transform-element {
-    transform: translateY(-20px);
+.container .features {
+    transform: translateY(-60px);
     opacity: 0;
-    transition: transform 2s, opacity 1s;
+    transition: transform 1s, opacity 1.5s;
 }
-
 .container .features .headers, .container .vications .headers{
     display: flex;
     width: 100%;
