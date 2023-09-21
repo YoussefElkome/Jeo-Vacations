@@ -59,6 +59,6 @@ document.addEventListener('DOMContentLoaded', function () {
         // Add .active class to the mainButton
         mainButton.classList.add('active');
 
-        smoothScrollTo(mainSection, 1000, -60); // 100px offset
+        smoothScrollTo(mainSection, 1000, 0); // 100px offset
     });
 });
