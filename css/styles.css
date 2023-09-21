@@ -21,7 +21,7 @@ body{
   /* Start Font Section*/
   @font-face {
     font-family: 'futur';
-    src: url(../Fonts/Futura-CondensedLight.otf);
+    src: url(../Fonts/Futura\ Light\ font.ttf);
 }
   /* End Font Section*/
   /* Start Navigation Section */
@@ -29,7 +29,12 @@ body{
     position: fixed;
     z-index: +3;
     right: 0;
-    top: 2%;
+  }
+  .contain{
+    position: fixed;
+    z-index: +4;
+    right: 0;
+    cursor: pointer;
   }
   .bar1, .bar2, .bar3 {
     width: 35px;
@@ -43,6 +48,9 @@ body{
   }
   .contain:hover .bar1,.contain:hover  .bar2,.contain:hover .bar3{
     background-color: #b9b9b9;
+  }
+  .bar1{
+    margin-top: 20px;
   }
   .bar2{
     width: 25px;
@@ -61,7 +69,39 @@ body{
   }
   /* Start Sidebar Section */
   nav .sidebar{
-    background-color: white;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    height: 100vh;
+    background-color: #e9e9e9;
+    margin-top: 0;
+    transition: 0.5s;
+    right: -500px;
+    padding-top: 5%;
+  }
+  nav .sidebar button{
+    background-color: transparent;
+    border: none;
+    margin:  0px;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: 'futur';
+    font-size: 40px;
+    letter-spacing: 2.5px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  nav .sidebar button:hover{
+    background-color: #c9c9c9;
+  }
+  nav .sidebar .active{
+    background-color: #4071f4;
+    color: white;
+  }
+  nav .sidebar .active:hover{
+    background-color: #4070f4ca;
   }
   /* End Sidebar Section */
   /* End Navigation Section */

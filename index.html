@@ -16,14 +16,17 @@
 </head>
 <body>
     <div class="container">
-        <nav dir="rtl">
-            <div class="contain" onclick="myFunction(this)" id="navBar">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-              </div>
-              <div class="sidebar">
-                <button class="more-button" id="more-button"></button>
+        <div class="contain" onclick="myFunction(this)" id="navBar">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        <nav dir="rtl" class="navbar">
+              <div class="sidebar" id="sidebar">
+                <button class="more-button active" id="more-button">Main</button>
+                <button class="more-button" id="more-button">Features</button>
+                <button class="more-button" id="vacationsButton">Vacations</button>
+                <button class="more-button" id="more-button">More...</button>
               </div>
         </nav>
         <div class="intro up">

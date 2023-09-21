@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const moreButton = document.querySelector('.intro .more-button, .sidebar .more-button');
+    const moreButtons = document.querySelectorAll('.intro .more-button, .sidebar .more-button');
     const featuresSection = document.getElementById('features-section');
+    const vacationsButton = document.getElementById('vacationsButton');
+    const vacationSection = document.getElementById('vacation-section');
 
     function smoothScrollTo(targetElement, duration, offset) {
         const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
@@ -22,7 +24,13 @@ document.addEventListener('DOMContentLoaded', function () {
         requestAnimationFrame(animate);
     }
 
-    moreButton.addEventListener('click', function () {
-        smoothScrollTo(featuresSection, 1000, -60); // 100px offset
+    moreButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            smoothScrollTo(featuresSection, 1000, -60); // 100px offset
+        });
+    });
+
+    vacationsButton.addEventListener('click', function () {
+        smoothScrollTo(vacationSection, 1000, -60); // 100px offset
     });
 });
