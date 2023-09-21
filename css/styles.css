@@ -38,7 +38,7 @@ body{
 }
 .container .intro h1{
     font-family: 'Nixie One', cursive;
-    font-size: 150px;
+    font-size: 130px;
     font-weight: lighter;
     margin: auto;
     padding: 4rem;
@@ -58,7 +58,7 @@ body{
     margin: auto;
     border-radius: 50px;
     padding: 20px 70px;
-    margin-top: 4rem;
+    margin-top: 3rem;
     margin-bottom: 3rem;
     transition: 0.3s ease-in-out;
     border: 1px solid transparent;
