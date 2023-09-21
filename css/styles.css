@@ -522,6 +522,12 @@ body{
     .container .vications .view{
         width: 90%;
     }
+    nav .sidebar{
+        width: 80%;
+    }
+    nav .sidebar button{
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 430px) {
