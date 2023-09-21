@@ -373,7 +373,7 @@ body{
         width: 240px;
     }
     nav .sidebar{
-        width: 70%;
+        width: 40%;
         padding-top: 20%;
     }
 }
@@ -461,6 +461,9 @@ body{
 @media screen and (max-width: 640px) {
     .container .features .headers h2, .container .vications .headers h2{
         font-size: 48px;
+    }
+    nav .sidebar{
+        width: 60%;
     }
 }
 
