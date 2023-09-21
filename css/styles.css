@@ -20,7 +20,7 @@ body{
   }
 /* Start Intro Section */
 .container .intro{
-    background-image: url(../Images/intro.png);
+    background-image: url(../Images/intro.webp);
     color: white;
     text-align: center;
     height: 100%;
