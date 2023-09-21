@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const moreButton = document.querySelector('.intro .more-button');
+    const moreButton = document.querySelector('.intro .more-button, .sidebar .more-button');
     const featuresSection = document.getElementById('features-section');
 
     function smoothScrollTo(targetElement, duration, offset) {

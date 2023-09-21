@@ -18,25 +18,37 @@ body{
   ::-webkit-scrollbar-thumb:active{
     background-color: rgb(93, 93, 93);
   }
+  /* Start Font Section*/
+  @font-face {
+    font-family: 'futur';
+    src: url(../Fonts/Futura-CondensedLight.otf);
+}
+  /* End Font Section*/
+  /* Start Navigation Section */
   nav{
     position: fixed;
-    z-index: +1;
-    width: 100vw;
+    z-index: +3;
+    right: 0;
+    top: 2%;
   }
   .bar1, .bar2, .bar3 {
     width: 35px;
     height: 4.5px;
-    background-color: #bdbaba;
+    background-color: #c9c9c9;
     margin: 6px 0;
     transition: 0.4s;
     border-radius: 10px;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out, width 0.5s;
+    margin-right: 1rem;
   }
   .contain:hover .bar1,.contain:hover  .bar2,.contain:hover .bar3{
-    background-color: #9c9b9b;
+    background-color: #b9b9b9;
   }
   .bar2{
     width: 25px;
+  }
+  nav:hover .bar2{
+    width: 35px;
   }
   .change .bar1 {
     transform: translate(0, 11px) rotate(-45deg);
@@ -47,6 +59,12 @@ body{
   .change .bar3 {
     transform: translate(0, -11px) rotate(45deg);
   }
+  /* Start Sidebar Section */
+  nav .sidebar{
+    background-color: white;
+  }
+  /* End Sidebar Section */
+  /* End Navigation Section */
 /* Start Intro Section */
 .container .intro{
     background-image: url(../Images/intro.webp);
