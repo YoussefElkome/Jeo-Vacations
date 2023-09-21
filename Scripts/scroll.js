@@ -36,7 +36,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Add .active class to the clicked button
             button.classList.add('active');
-            sideBar.style.right = "-400px";
+            sideBar.style.right = "-500px";
+            navBar.classList.remove('change');    
             smoothScrollTo(featuresSection, 1000, -60); // 100px offset
         });
     });
@@ -49,7 +50,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Add .active class to the vacationsButton
         vacationsButton.classList.add('active');
-        sideBar.style.right = "-400px";
+        sideBar.style.right = "-500px";
+        navBar.classList.remove('change');    
         smoothScrollTo(vacationSection, 1000, -60); // 100px offset
     });
     mainButton.addEventListener('click', function () {
@@ -59,8 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         // Add .active class to the mainButton
-        mainButton.classList.add('active');
-        sideBar.style.right = "-400px";
+        sideBar.style.right = "-500px";
         navBar.classList.remove('change');    
         smoothScrollTo(mainSection, 1000, 0); // 100px offset
     });
