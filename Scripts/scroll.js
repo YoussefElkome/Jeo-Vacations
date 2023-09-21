@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
     const moreButtons = document.querySelectorAll('.intro .more-button, .sidebar .more-button');
+    const mainSection = document.getElementById('main-section');
+    const mainButton = document.getElementById('mainButton');
     const featuresSection = document.getElementById('features-section');
     const vacationsButton = document.getElementById('vacationsButton');
     const vacationSection = document.getElementById('vacation-section');
-
     function smoothScrollTo(targetElement, duration, offset) {
         const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
         const startPosition = window.pageYOffset;
@@ -26,11 +27,38 @@ document.addEventListener('DOMContentLoaded', function () {
 
     moreButtons.forEach(function (button) {
         button.addEventListener('click', function () {
+            // Remove .active class from all buttons
+            moreButtons.forEach(function (btn) {
+                btn.classList.remove('active');
+            });
+
+            // Add .active class to the clicked button
+            button.classList.add('active');
+
             smoothScrollTo(featuresSection, 1000, -60); // 100px offset
         });
     });
 
     vacationsButton.addEventListener('click', function () {
+        // Remove .active class from all buttons
+        moreButtons.forEach(function (btn) {
+            btn.classList.remove('active');
+        });
+
+        // Add .active class to the vacationsButton
+        vacationsButton.classList.add('active');
+
         smoothScrollTo(vacationSection, 1000, -60); // 100px offset
+    });
+    mainButton.addEventListener('click', function () {
+        // Remove .active class from all buttons
+        moreButtons.forEach(function (btn) {
+            btn.classList.remove('active');
+        });
+
+        // Add .active class to the mainButton
+        mainButton.classList.add('active');
+
+        smoothScrollTo(mainSection, 1000, -60); // 100px offset
     });
 });
