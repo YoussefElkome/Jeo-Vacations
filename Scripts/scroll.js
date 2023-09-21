@@ -5,6 +5,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const featuresSection = document.getElementById('features-section');
     const vacationsButton = document.getElementById('vacationsButton');
     const vacationSection = document.getElementById('vacation-section');
+    const navBar = document.getElementById("navBar");
+    const sideBar = document.getElementById("sidebar");
     function smoothScrollTo(targetElement, duration, offset) {
         const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
         const startPosition = window.pageYOffset;
@@ -34,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Add .active class to the clicked button
             button.classList.add('active');
-
+            sideBar.style.right = "-400px";
             smoothScrollTo(featuresSection, 1000, -60); // 100px offset
         });
     });
@@ -47,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Add .active class to the vacationsButton
         vacationsButton.classList.add('active');
-
+        sideBar.style.right = "-400px";
         smoothScrollTo(vacationSection, 1000, -60); // 100px offset
     });
     mainButton.addEventListener('click', function () {
@@ -58,7 +60,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Add .active class to the mainButton
         mainButton.classList.add('active');
-
+        sideBar.style.right = "-400px";
+        navBar.classList.remove('change');    
         smoothScrollTo(mainSection, 1000, 0); // 100px offset
     });
 });

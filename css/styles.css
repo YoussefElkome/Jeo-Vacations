@@ -55,7 +55,7 @@ body{
   .bar2{
     width: 25px;
   }
-  .contain:hover .bar2{
+  nav:hover .bar2{
     width: 35px;
   }
   .change .bar1 {
@@ -78,7 +78,7 @@ body{
     margin-top: 0;
     transition: 0.5s;
     right: -500px;
-    padding-top: 5%;
+    padding-top: 10%;
   }
   nav .sidebar button{
     background-color: transparent;
@@ -372,7 +372,10 @@ body{
     .container .features .view img {
         width: 240px;
     }
-    
+    nav .sidebar{
+        width: 70%;
+        padding-top: 20%;
+    }
 }
 
 @media screen and (max-width: 923px) {
