@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function () {
             btn.classList.remove('active');
         });
 
-        // Add .active class to the mainButton
+        mainButton.classList.add('active');
         sideBar.style.right = "-500px";
         navBar.classList.remove('change');    
         smoothScrollTo(mainSection, 1000, 0); // 100px offset
