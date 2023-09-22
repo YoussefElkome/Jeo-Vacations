@@ -55,7 +55,7 @@ body{
   .bar2{
     width: 25px;
   }
-  nav:hover .bar2{
+  .contain:hover .bar2{
     width: 35px;
   }
   .change .bar1 {
