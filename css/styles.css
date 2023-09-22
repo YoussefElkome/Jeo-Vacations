@@ -175,7 +175,7 @@ body{
     justify-content: space-between;
     padding-top: 50px;
 }
-.container .features .headers h2 , .container .vications .headers h2{
+.container .features .headers h2 , .container .vications .headers h2 , .container .what-about-vacations h2{
     font-weight: 300;
     font-size: 4rem;
     margin-left: 4rem;
@@ -251,6 +251,18 @@ body{
     justify-self: flex-start;
 }
 /* End Vacation Section */
+/* Start What About Vacations Section */
+.container .what-about-vacations{
+    background-color: #eeefee;
+}
+.container .what-about-vacations .headers h2{
+    text-align: center;
+    padding-top: 2rem;
+    letter-spacing: 1.5px;
+    font-size: 110px;
+    font-weight: 100;
+}
+/* End What About Vacations Section */
  @media screen and (max-width: 1200px) {
     .container .features .view img{
         width: 230px;
