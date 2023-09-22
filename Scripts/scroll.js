@@ -6,6 +6,8 @@ document.addEventListener('DOMContentLoaded', function () {
     const featuresButton = document.getElementById('featuresButton');
     const vacationsButton = document.getElementById('vacationsButton');
     const vacationSection = document.getElementById('vacation-section');
+    const viewsButton = document.getElementById('viewsButton');
+    const viewsSection = document.getElementById('views-section');
     const navBar = document.getElementById("navBar");
     const sideBar = document.getElementById("sidebar");
     function smoothScrollTo(targetElement, duration, offset) {
@@ -75,5 +77,16 @@ document.addEventListener('DOMContentLoaded', function () {
         sideBar.style.right = "-500px";
         navBar.classList.remove('change');    
         smoothScrollTo(mainSection, 1000, 0); // 100px offset
+    });
+    viewsButton.addEventListener('click', function () {
+        // Remove .active class from all buttons
+        moreButtons.forEach(function (btn) {
+            btn.classList.remove('active');
+        });
+
+        viewsButton.classList.add('active');
+        sideBar.style.right = "-500px";
+        navBar.classList.remove('change');    
+        smoothScrollTo(viewsSection, 1000, 0); // 100px offset
     });
 });

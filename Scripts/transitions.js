@@ -2,11 +2,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // Get references to the "Features" and "Vications" sections
     const featuresSection = document.getElementById('features-section');
     const vacationSection = document.getElementById('vacation-section');
-
+    const viewsSection = document.getElementById('views-section');
     // Get references to the elements to animate in both sections
     const featuresElementsToAnimate = document.querySelectorAll('.container .features');
     const vacationElementsToAnimate = document.querySelectorAll('.container .vications');
-
+    const whatAboutVacations = document.querySelectorAll('.container .what-about-vacations');
     function handleIntersection(entries, observer) {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
@@ -23,7 +23,14 @@ document.addEventListener('DOMContentLoaded', function () {
                         element.style.opacity = 1;
                         element.style.transform = 'translateY(0)';
                     });
+                } else if (entry.target === viewsSection) {
+                    // When the "Vications" section enters the viewport, set opacity to 1 and transform to 0
+                    whatAboutVacations.forEach((element) => {
+                        element.style.opacity = 1;
+                        element.style.transform = 'translateY(0)';
+                    });
                 }
+
 
                 // Stop observing once the animation is applied
                 observer.unobserve(entry.target);
@@ -39,4 +46,5 @@ document.addEventListener('DOMContentLoaded', function () {
     // Observe both the "Features" and "Vications" sections
     intersectionObserver.observe(featuresSection);
     intersectionObserver.observe(vacationSection);
+    intersectionObserver.observe(viewsSection);
 });

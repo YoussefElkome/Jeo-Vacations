@@ -89,7 +89,7 @@ body{
     padding-bottom: 20px;
     font-family: 'futur';
     font-size: 40px;
-    letter-spacing: 2.5px;
+    letter-spacing: 4px;
     cursor: pointer;
     transition: 0.4s;
   }
@@ -164,7 +164,7 @@ body{
     opacity: 0;
     transition: 1s;
 }
-.container .features ,.container .vications{
+.container .features ,.container .vications ,.container .what-about-vacations{
     transform: translateY(-60px);
     opacity: 0;
     transition: transform 1.5s, opacity 1.5s;
@@ -226,8 +226,8 @@ body{
 }
 .container .vications .view {
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 8px; /* Remove the gap */
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
     margin-left: auto;
     margin-right: 4rem;
     width: 40%;
@@ -261,6 +261,17 @@ body{
     letter-spacing: 1.5px;
     font-size: 110px;
     font-weight: 100;
+}
+.container .what-about-vacations .view {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 10px;
+}
+.container .what-about-vacations .view .special{
+    grid-column-start: 3;
+    grid-row-start: 6;
+    width: 100%;
 }
 /* End What About Vacations Section */
  @media screen and (max-width: 1200px) {
