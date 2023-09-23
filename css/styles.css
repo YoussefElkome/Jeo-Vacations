@@ -262,16 +262,21 @@ body{
     font-size: 110px;
     font-weight: 100;
 }
+.container .what-about-vacations .details p{
+    font-family: 'Nixie One';
+    font-size: 60px;
+    text-align: center;
+    margin-top: 2rem;
+} 
 .container .what-about-vacations .view {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(8, 5vw);
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 5vw);
     grid-gap: 10px;
 }
 .container .what-about-vacations .view .special{
     grid-column-start: 3;
     grid-row-start: 6;
-    width: 100%;
 }
 /* End What About Vacations Section */
 /* Start Responsive */
