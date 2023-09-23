@@ -274,6 +274,7 @@ body{
     width: 100%;
 }
 /* End What About Vacations Section */
+/* Start Responsive */
  @media screen and (max-width: 1200px) {
     .container .features .view img{
         width: 230px;
@@ -576,3 +577,4 @@ body{
       }
 }
 
+/* End Responsive */
