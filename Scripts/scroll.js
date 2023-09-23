@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     moreButtons.forEach(function (button) {
         button.addEventListener('click', function () {
-            // Remove .active class from all buttons
+
             moreButtons.forEach(function (btn) {
                 btn.classList.remove('active');
             });
@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
     featuresButton.addEventListener('click', function () {
-        // Remove .active class from all buttons
         featuresButton.forEach(function (btn) {
             btn.classList.remove('active');
         });
@@ -53,10 +52,9 @@ document.addEventListener('DOMContentLoaded', function () {
         mainButton.classList.add('active');
         sideBar.style.right = "-500px";
         navBar.classList.remove('change');    
-        smoothScrollTo(featuresSection, 1000, 0); // 100px offset
+        smoothScrollTo(featuresSection, 1000, 0);
     });
     vacationsButton.addEventListener('click', function () {
-        // Remove .active class from all buttons
         moreButtons.forEach(function (btn) {
             btn.classList.remove('active');
         });
@@ -65,10 +63,9 @@ document.addEventListener('DOMContentLoaded', function () {
         vacationsButton.classList.add('active');
         sideBar.style.right = "-500px";
         navBar.classList.remove('change');    
-        smoothScrollTo(vacationSection, 1000, -60); // 100px offset
+        smoothScrollTo(vacationSection, 1000, -60);
     });
     mainButton.addEventListener('click', function () {
-        // Remove .active class from all buttons
         moreButtons.forEach(function (btn) {
             btn.classList.remove('active');
         });
@@ -76,10 +73,9 @@ document.addEventListener('DOMContentLoaded', function () {
         mainButton.classList.add('active');
         sideBar.style.right = "-500px";
         navBar.classList.remove('change');    
-        smoothScrollTo(mainSection, 1000, 0); // 100px offset
+        smoothScrollTo(mainSection, 1000, 0);
     });
     viewsButton.addEventListener('click', function () {
-        // Remove .active class from all buttons
         moreButtons.forEach(function (btn) {
             btn.classList.remove('active');
         });
@@ -87,6 +83,6 @@ document.addEventListener('DOMContentLoaded', function () {
         viewsButton.classList.add('active');
         sideBar.style.right = "-500px";
         navBar.classList.remove('change');    
-        smoothScrollTo(viewsSection, 1000, 0); // 100px offset
+        smoothScrollTo(viewsSection, 1000, 0);
     });
 });

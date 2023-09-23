@@ -1,1 +1,3 @@
-const andMore = document.getElementById("")
+document.addEventListener('DOMContentLoaded', function () {
+    const andMore = document.getElementById("andMore");
+})
