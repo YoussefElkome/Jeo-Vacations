@@ -36,12 +36,10 @@ document.addEventListener('DOMContentLoaded', function () {
             moreButtons.forEach(function (btn) {
                 btn.classList.remove('active');
             });
-
-            // Add .active class to the clicked button
             button.classList.add('active');
             sideBar.style.right = "-500px";
             navBar.classList.remove('change');    
-            smoothScrollTo(featuresSection, 1000, -60); // 100px offset
+            smoothScrollTo(featuresSection, 1000, -60);
         });
     });
     featuresButton.addEventListener('click', function () {
@@ -59,7 +57,6 @@ document.addEventListener('DOMContentLoaded', function () {
             btn.classList.remove('active');
         });
 
-        // Add .active class to the vacationsButton
         vacationsButton.classList.add('active');
         sideBar.style.right = "-500px";
         navBar.classList.remove('change');    
