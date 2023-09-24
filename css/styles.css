@@ -270,14 +270,44 @@ body{
 } 
 .container .what-about-vacations .view {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(2,25%);
+    grid-template-columns: repeat(4, 1fr); /* 4 columns with equal width */
     gap: 8px;
+    grid-auto-rows: minmax(100px, auto); /* Automatically adjust row height */
 }
-.container .what-about-vacations .view .special{
-    grid-column-start: 3;
-    grid-row-start: 6;
+
+.container .what-about-vacations .view .special1 {
+    grid-column: span 3; /* Span 3 columns */
+    grid-row: span 2; /* Span 2 rows */
 }
+
+.container .what-about-vacations .view .special2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.container .what-about-vacations .view .special3 {
+    grid-column: span 7; /* Span 7 columns */
+    grid-row: 1;
+}
+
+.container .what-about-vacations .view .special4 {
+    grid-column: span 10; /* Span 7 columns */
+    grid-row: 1;
+}
+
+.container .what-about-vacations .view .special {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+/* Add these styles to position view6 next to view7, view8, and view9 */
+.container .what-about-vacations .view .special1 + .special2,
+.container .what-about-vacations .view .special1 + .special3,
+.container .what-about-vacations .view .special1 + .special4 {
+    grid-column: span 1; /* Span 1 column */
+    grid-row: 1;
+}
+
 /* End What About Vacations Section */
 /* Start Responsive */
  @media screen and (max-width: 1200px) {
