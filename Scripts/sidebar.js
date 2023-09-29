@@ -1,9 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     const navBar = document.getElementById("navBar");
-    const navbar = document.getElementById("navbar");
     const sideBar = document.getElementById("sidebar");
     const closeI = document.getElementById("closeI");
-
+    const mainSection = document.querySelector('.container');
     navBar.addEventListener("click", toggleSidebar);
 
     function toggleSidebar() {
@@ -13,6 +12,10 @@ document.addEventListener("DOMContentLoaded", function () {
             sideBar.style.right = "0px";
         }
     }
+    mainSection.addEventListener("click", function (event) {
+        sideBar.style.right = "-400px";
+        navBar.classList.remove("change");
+    });
 });
 
 function myFunction(x) {
