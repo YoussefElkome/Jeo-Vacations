@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const navBar = document.getElementById("navBar");
     const sideBar = document.getElementById("sidebar");
-    const closeI = document.getElementById("closeI");
     const mainSection = document.querySelector('.container');
     navBar.addEventListener("click", toggleSidebar);
 
