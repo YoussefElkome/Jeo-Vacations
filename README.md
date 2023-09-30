@@ -50,7 +50,7 @@ Ready to embark on your next adventure with Jeo Vacations? Follow these simple s
 
 Booking your dream vacation with Jeo Vacations is a breeze:
 
-1. Visit our website : <a href="https://youssefelkome.github.io/Jeo-Vacations/">Jeo Vacations</a>
+1. Visit our website : <a href="https://youssefelkomy.github.io/Jeo-Vacations/">Jeo Vacations</a>
 2. Explore destinations and vacation packages.
 3. Customize your itinerary.
 4. Book with confidence.
